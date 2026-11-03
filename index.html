@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>You're Invited · Brar Mortgages Partner Appreciation Evening</title>
+  <meta name="description" content="Thank you for your partnership. Join Brar Mortgages for a special evening of celebration, connection & appreciation — Friday, December 11, 2026 at 6:00 PM, Four Points by Sheraton Edmonton South.">
+  <meta name="theme-color" content="#0b241c">
+
+  <!-- Open Graph / link previews (WhatsApp, iMessage, email, Slack…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Brar Mortgages">
+  <meta property="og:title" content="You're Invited: Brar Mortgages Partner Appreciation Evening">
+  <meta property="og:description" content="Thank you for your partnership! Celebrate the success with us — Friday, Dec 11, 2026 · 6:00 PM · Four Points by Sheraton Edmonton South.">
+  <!-- Preview images must be an ABSOLUTE URL. Uncomment and set your domain once deployed:
+  <meta property="og:image" content="https://YOUR-DOMAIN/public/brar-mortgages-logo.png">
+  <meta property="og:url" content="https://YOUR-DOMAIN/">
+  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="You're Invited: Brar Mortgages Partner Appreciation Evening">
+  <meta name="twitter:description" content="Thank you for your partnership! Friday, Dec 11, 2026 · 6:00 PM · Four Points by Sheraton Edmonton South.">
+
+  <link rel="icon" href="public/brar-mortgages-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+  <div class="bokeh" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="brand-backing">
+      <img class="brand-logo" src="public/brar-mortgages-logo.png" width="500" height="397"
+           alt="Brar Mortgages logo"
+           onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+      <span class="brand-fallback" hidden>Brar Mortgages</span>
+    </div>
+  </header>
+
+  <main class="stage" id="stage">
+    <!-- ===== Gift box ===== -->
+    <div class="gift-wrap" id="giftWrap">
+      <div class="gift" id="gift">
+        <div class="gift__shadow"></div>
+        <div class="gift__inside"></div>
+
+        <!-- small card that rises out of the box -->
+        <div class="peek-card" id="peekCard" aria-hidden="true">
+          <span class="peek-card__eyebrow">You're Invited</span>
+          <span class="peek-card__mono">BM</span>
+        </div>
+
+        <div class="gift__base">
+          <span class="ribbon ribbon--v" id="ribbonV"></span>
+          <span class="shine"></span>
+        </div>
+
+        <div class="gift__lid" id="lid">
+          <span class="ribbon ribbon--lid" id="ribbonLid"></span>
+          <span class="shine"></span>
+        </div>
+
+        <button class="bow" id="bow" type="button" aria-label="Untie the ribbon to open your invitation">
+          <span class="bow__tail bow__tail--l"></span>
+          <span class="bow__tail bow__tail--r"></span>
+          <span class="bow__loop bow__loop--l"></span>
+          <span class="bow__loop bow__loop--r"></span>
+          <span class="bow__knot"></span>
+        </button>
+      </div>
+      <p class="hint" id="hint"><span class="hint__dot" aria-hidden="true"></span>Tap the ribbon to open</p>
+    </div>
+
+    <!-- ===== Invitation card ===== -->
+    <article class="card" id="card" aria-labelledby="inviteTitle" tabindex="-1">
+      <div class="card__frame">
+        <p class="eyebrow">You're Invited</p>
+        <h1 id="inviteTitle" class="card__title">Thank You for Your Partnership</h1>
+        <p class="card__sub">Celebrate the success with us</p>
+        <p class="card__line">A special evening of celebration, connection &amp; appreciation</p>
+
+        <div class="ornament" aria-hidden="true"><span></span>✦<span></span></div>
+
+        <dl class="details">
+          <div class="detail">
+            <dt><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg>Date</dt>
+            <dd>Friday, December 11, 2026</dd>
+          </div>
+          <div class="detail">
+            <dt><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Time</dt>
+            <dd>6:00 PM</dd>
+          </div>
+          <div class="detail">
+            <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Venue</dt>
+            <dd>
+              <strong>Four Points by Sheraton Edmonton South</strong><br>
+              7230 Argyll Rd NW, Edmonton, AB T6C 4A6
+            </dd>
+          </div>
+        </dl>
+
+        <div class="actions">
+          <a class="btn btn--primary" href="https://forms.gle/dehSAAB57XDKFnya6" target="_blank" rel="noopener">
+            RSVP Now
+            <span class="visually-hidden">(opens in a new tab)</span>
+          </a>
+          <p class="rsvp-note">Kindly RSVP by Friday, December 4</p>
+
+          <div class="cal">
+            <button class="btn btn--outline" id="calToggle" type="button" aria-expanded="false" aria-controls="calMenu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4M12 12.5v5M9.5 15h5"/></svg>
+              Add to Calendar
+              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
+            </button>
+            <div class="cal__menu" id="calMenu" hidden>
+              <a class="cal__opt" target="_blank" rel="noopener"
+                 href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Brar%20Mortgages%20Partner%20Appreciation%20Evening&amp;dates=20261212T010000Z/20261212T050000Z&amp;ctz=America/Edmonton&amp;location=Four%20Points%20by%20Sheraton%20Edmonton%20South%2C%207230%20Argyll%20Rd%20NW%2C%20Edmonton%2C%20AB%20T6C%204A6&amp;details=A%20special%20evening%20of%20celebration%2C%20connection%20%26%20appreciation.%20RSVP%20by%20Friday%2C%20December%204:%20https://forms.gle/dehSAAB57XDKFnya6">
+                Google Calendar <span class="visually-hidden">(opens in a new tab)</span>
+              </a>
+              <a class="cal__opt" href="public/brar-partner-evening.ics" download="Brar-Mortgages-Partner-Evening.ics" type="text/calendar">
+                Apple / Outlook (.ics)
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn--outline" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&amp;query=Four%20Points%20by%20Sheraton%20Edmonton%20South%2C%207230%20Argyll%20Rd%20NW%2C%20Edmonton%2C%20AB%20T6C%204A6">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+            Get Directions
+            <span class="visually-hidden">(opens Google Maps in a new tab)</span>
+          </a>
+        </div>
+
+        <button class="replay" id="replay" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5"/></svg>
+          Replay
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <morus-credit logo-src="public/morus-ai-logo.png" href="https://morusai.com">
+    <a href="https://morusai.com" target="_blank" rel="noopener" class="credit-fallback">Created by Morus AI</a>
+  </morus-credit>
+
+  <script src="components/morus-credit.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
